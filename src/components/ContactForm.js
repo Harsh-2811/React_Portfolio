@@ -4,8 +4,10 @@ import { Link } from 'react-router-dom'
 
 import * as emailjs from 'emailjs-com'
 
-const ContactForm = ()=>{
-    const [name,setName] = useState("");
+const ContactForm = (props)=>{
+
+const {makeMessage} = props;
+const [name,setName] = useState("");
 const [email,setEmail] = useState("");
 
 const [subject,setSubject] = useState("");
@@ -16,19 +18,19 @@ const sendInquiry = (e)=>{
     e.preventDefault()
     if(name == " ")
     {
-        alert("Please Fill Your Name")
+        makeMessage({"msg":"Please Fill Your Name","variant":"error"})
     }
     else if(email == " ")
     {
-        alert("Please Fill Your Name")
+        makeMessage({"msg":"Please Fill Your Email","variant":"error"})
     }
     else if(subject == " ")
     {
-        alert("Please Fill Your Name")
+        makeMessage({"msg":"Please Fill Your Subject","variant":"error"})
     }
     else if(message == " ")
     {
-        alert("Please Fill Your Name")
+        makeMessage({"msg":"Please Fill Your Message","variant":"error"})
     }
     else{
         let templateParams = {
@@ -43,13 +45,14 @@ const sendInquiry = (e)=>{
          templateParams,
         'user_00FBXQES8XbhV1THedLJF'
         )        .then(function(response) {
-            alert("Your Messages has been sent")
             setName("");
             setEmail("");
             setSubject("");
             setMessage("")
+            makeMessage({"msg":"Your Message has been sent","variant":"success"})
+            
           }, function(error) {
-            console.log('FAILED...', error);
+            makeMessage({"msg":"Failed","variant":"error"})
           });
     }
 }

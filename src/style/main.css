@@ -30,13 +30,13 @@
 
 .services-list{
     list-style:  none;
-    align-items: center;    
+    padding-left: 0px !important;    
 }
 
 .services-list li{
     padding: 2.2% 0%;
     font-size: 1.2rem;
-    text-align: center;
+    text-align: center !important; 
     
 }
 
