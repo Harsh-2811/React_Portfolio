@@ -11,13 +11,11 @@ const Header = ()=>{
         <div>
            <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect>
               <Container>
-              <LinkContainer to='/'>
-                    <Navbar.Brand href="#home">React Portfolio</Navbar.Brand>
-                </LinkContainer>
+              
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
-                <Navbar.Collapse id="basic-navbar-nav">
+                <Navbar.Collapse id="basic-navbar-nav" className="justify-content-center">
                     
-                    <Nav className="ml-auto" style={{ "marginLeft":"auto"}} activeKey={location.pathname}>
+                    <Nav  activeKey={location.pathname}>
                             <LinkContainer exact to='/'>
                                 <Nav.Link className="animate_link " ><i className="fas fa-home pr-1"></i> Home</Nav.Link>
                             </LinkContainer>

@@ -15,7 +15,7 @@ const Certificates = ({certi_list})=>{
                     {
                         certi_list.map((cert,index)=>{
                             return(
-                                <Col md={4} lg={4} sm={12} key={index}>
+                                <Col md={4} lg={4} sm={12} key={index} className="my-2">
                                     <img src={cert} alt="certificate"/>
                                 </Col>
                             )
