@@ -18,8 +18,33 @@
     height:30vh;
     position: absolute;
     top:25%;
-    
-    left:50%;
-    font-size: 5rem !important;
+    left:50% !important;
+    font-size: 5rem ;
     transform: translate(-20%,-50%);
   }
+  @media only screen 
+  and (max-width: 1024px) 
+   {
+    .parent .stitle{
+        left:40% !important;
+      }
+}
+@media only screen 
+and (max-width: 768px) 
+ {
+  .parent .stitle{
+      left:35% !important;
+    }
+}
+  @media only screen and (max-width: 576px) {
+    .parent  .stitle{
+        width: 40vw !important;
+        height:30vh !important;
+        font-size: 3rem !important;
+        left:20% !important;
+      }
+    
+  }
+ 
+
+
