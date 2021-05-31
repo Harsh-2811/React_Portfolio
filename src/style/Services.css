@@ -15,9 +15,10 @@ a.card {
     text-decoration: none;
 }
 
+
 .card {
     position: relative;
-    border: 0;
+    border: 2px solid #10375d !important; 
     border-radius: 0;
     background-color: #fff;
     -webkit-box-shadow: 0 12px 20px 1px rgba(64,64,64,0.09);
@@ -40,6 +41,7 @@ a.card {
     border-radius: .25rem;
 }
 
+
 .box-shadow {
     -webkit-box-shadow: 0 12px 20px 1px rgba(64,64,64,0.09) !important;
     box-shadow: 0 12px 20px 1px rgba(64,64,64,0.09) !important;
@@ -55,7 +57,7 @@ a.card {
     border-radius: 50% !important;
 }
 .bg-set{
-    background-color: #2c3e50!important;
+    background-color: #10375d!important;
 }
 
 .ml-auto, .mx-auto {
@@ -81,7 +83,7 @@ img, figure {
 
 .text-sm {
    
-    color: #2c3e50!important;
+    color: #10375d!important;
     font-size: 0.9rem;
 }
 p, .p {
@@ -91,10 +93,11 @@ p, .p {
 
 .card-title {
     margin: 0;
-    
+    color:#10375d;
     font-size: 1.4rem;
     font-weight: 900;
 }
+
 
 .pt-1, .py-1 {
     padding-top: .25rem !important;
@@ -102,9 +105,19 @@ p, .p {
 
 .head-icon{
     margin-top:18px;
-    color:#18bc9c
+    color:#fac654
 }
-
-.section-technologies{
-   background-image: url('../Tech_Back.jpg');
+.card:hover{
+    background-color: #10375d;
+    transition: 1s;
+}
+.card:hover h3{
+    color: #fac654 !important;
+}
+.card:hover p{
+    color:#fff !important;
+}
+.card:hover .service-image {
+    transition: 1s;
+    background-color: #fff !important;
 }

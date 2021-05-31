@@ -12,7 +12,7 @@
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: #18bc9c!important;
+    background-color: #fac654!important;
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
   }
@@ -20,4 +20,9 @@
   .animate_link:hover:after {
     transform: scaleX(1);
     transform-origin: bottom left;
+  }
+
+  .sticky-nav {
+    position: sticky !important;
+    top: 0;
   }

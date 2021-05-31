@@ -57,12 +57,12 @@ const sendInquiry = (e)=>{
     }
 }
     return(
-        <div className="my-3 d-flex justify-content-center">
-            <Col md={6}>
+        <div className="my-3">
+            
             <Form onSubmit={sendInquiry}>
 
 <Form.Group controlId='name' className="my-1">
-    <Form.Label>Name</Form.Label>
+    <Form.Label style={{'fontWeight':'bold','textAlign':'left'}}>Name</Form.Label>
     <Form.Control
         required
         type='name'
@@ -74,7 +74,7 @@ const sendInquiry = (e)=>{
 </Form.Group>
 
 <Form.Group controlId='email' className="my-1">
-    <Form.Label>Email Address</Form.Label>
+    <Form.Label style={{'fontWeight':'bold'}}>Email Address</Form.Label>
     <Form.Control
         required
         type='email'
@@ -86,7 +86,7 @@ const sendInquiry = (e)=>{
 </Form.Group>
 
 <Form.Group controlId='Subject' className="my-1">
-    <Form.Label>Subject</Form.Label>
+    <Form.Label style={{'fontWeight':'bold'}}>Subject</Form.Label>
     <Form.Control
         required
         type='text'
@@ -98,7 +98,7 @@ const sendInquiry = (e)=>{
 </Form.Group>
 
 <Form.Group controlId='Message' className="my-1">
-    <Form.Label>Message</Form.Label>
+    <Form.Label style={{'fontWeight':'bold'}}>Message</Form.Label>
     <Form.Control
         required
         as="textarea" rows={3}
@@ -115,7 +115,7 @@ const sendInquiry = (e)=>{
 
 </Form>
 
-            </Col>
+           
        
         </div>
     )

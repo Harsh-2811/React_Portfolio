@@ -19,12 +19,12 @@ const App =() =>{
       <Switch>
       <main className="">
       
-      <Route exact path='/' component={(props)=> <HomeScreen title="Home" {...props}/>}  />
+      <Route exact path='/' component={(props)=> <HomeScreen />}  />
       <Route exact path='/services' component={(props)=><ServiceScreen title="Services" {...props}/>} />
       <Route exact path='/projects' component={(props)=> <ProjectScreen title="Projects" {...props}/>} />
       <Route exact path='/projects/:project' component={ProjectDetailScreen} />
       <Route exact path='/contacts' component={(props)=>{
-        return <ContactScreen title="Contact Me" {...props}/>
+        return <ContactScreen title="Contact US" {...props}/>
       }} />
       
 

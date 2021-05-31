@@ -4,7 +4,7 @@ import { LinkContainer } from 'react-router-bootstrap';
 
 import '../style/Project.css';
 import Project from '../components/Project';
-import Poster from '../components/Poster';
+import SecondaryPoster from '../components/SecondaryPoster';
 const ProjectScreen = (props)=>{
     
     const [tech_list,set_TechList] = useState([
@@ -94,16 +94,17 @@ const ProjectScreen = (props)=>{
     console.log(selectedprojects)
     return(
         <div>
-            <Poster title={props.title}/>
-        <section className="section-projects" style={{"backgroundImage":'linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url("/images/Service_background.png")',"marginBottom":"-16px"}}>
+            <SecondaryPoster title={props.title}/>
+        <section className="section-projects mt-4" style={{"marginBottom":"-16px"}}>
             <Container>
                     <Row className="row justify-content-center pb-3 ">
                 <Col md={7} className="heading-section ftco-animate text-center">
-                    <h2 className="my-4 project-title" style={{"color":"#18bc9c"}}>Recent Work</h2>
+                    <h2 className="my-4 project-title">Recent Work</h2>
+                    
                     
                 </Col>
                 </Row>
-                <div class="button-group filters-button-group">
+                <div class="button-group filters-button-group mb-3 mt-4" style={{'zIndex':'1'}}>
                    {tech_list.map((tech,index)=>{
                        return(
                         <Button className={`button ${tech == selectedType?'is-checked':''    }`} data-filter="*" onClick={()=>changeSelectedType(tech)} key={index}>{tech}</Button>
@@ -113,15 +114,17 @@ const ProjectScreen = (props)=>{
                 </div>
 
                    <Row className="my-3">
-                    
-                    {
-                        selectedprojects.map((project)=>{
-                            return(
-                                <Project project={project}/>
-                            )
-                        })
-                    }
-                    
+                   <Col md={12} lg={12} sm={12} >
+                   <div class="portfolio-list recent">
+                        {
+                            selectedprojects.map((project,index)=>{
+                                return(
+                                    <Project project={project} index={index}/>
+                                )
+                            })
+                        }
+                    </div>
+                     </Col>
                     </Row>
         
             </Container>

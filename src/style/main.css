@@ -1,5 +1,5 @@
 
-.aboutus-title,.certificate-title,.service-title,.tech-title{
+.aboutus-title,.certificate-title,.service-title,.tech-title,.project-title{
     font-size: 30px;
     letter-spacing: 0;
     line-height: 42px;
@@ -7,24 +7,27 @@
     padding: 0 0 11px;
     position: relative;
     text-transform: uppercase;
-    color: #18bc9c;
+    color: #10375d;
+    font-weight: bold;
 }
-.aboutus-title::after,.certificate-title::after,.service-title::after,.tech-title::after {
-    background: #000 none repeat scroll 0 0;
+
+.aboutus-title::after,.certificate-title::after,.service-title::after,.tech-title::after,.project-title::after {
+    background: #fac654 none repeat scroll 0 0;
     bottom: 0;
     content: "";
-    height: 3px;
-    left: 45%;
+    height:6px;
+    left: 40%;
     position: absolute;
-    width: 10%;
+    width: 20%;
+    border-radius: 4px;
 }
 
 .aboutDiv{
-    box-shadow: 0 4px 8px 0 rgba(24, 188, 156, 0.2), 0 6px 20px 0 rgba(24, 188, 156, 0.19);
+    box-shadow: 0 4px 8px 0 rgba(16, 55, 93, 0.2), 0 6px 20px 0 rgba(16, 55, 93, 0.19);
 }
 
 .footer-section{
-    background-color: #2c3e50;
+    background-color: #10375d;
     color:#fff;
 }
 
@@ -43,7 +46,7 @@
 .services-list li:hover{
     border-style: none solid solid solid;
     border-width: 2px;
-    border-color: #18bc9c !important;
+    border-color: #fac654 !important;
     
 }
 
@@ -146,12 +149,12 @@
   
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #9cffec !important;
+    background: #fac654 !important;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
-    background: #9cffec !important;
+    background: #fac654 !important;
   }
 
   .scrollTop{
@@ -164,13 +167,13 @@
    font-size: 2rem;
    z-index: 1;
    cursor: pointer;
-   color: #9cffec;
+   color: #fac654;
   
         
   }
   .scrollTop:hover{
     
-    color:#18bc9c!important;
+    color:#fac654!important;
 
   }
   @media only screen and (max-width: 600px) {
@@ -184,8 +187,48 @@
       font-size: 2rem;
       z-index: 1;
       cursor: pointer;
-      color: #9cffec;
+      color: #fac654;
      
            
      }
+  }
+
+ 
+
+  .outline-primary{
+    background-color: #fff !important;
+    border-color: #10375d !important;
+    color: #fac654 !important;
+  }
+
+  .outline-primary:hover{
+   
+    background-color: #10375d !important;
+    color: #fac654 !important;
+  }
+
+  .outline-primary a,.outline-primary a:hover{
+    color:  #fac654 !important;
+  }
+  .aboutlist{
+    list-style-type: '';
+    text-indent: -25px; /* key property */
+    
+
+  }
+
+  .aboutlist li{
+      margin-top: 2%;
+      margin-left: 1em;
+      list-style-position: outside;
+      color:#fff;
+      letter-spacing: 0.1rem;
+      font-size: 22 rem;
+  }
+
+  .aboutlist li::before{
+    content: '\f14a';
+    color:#fac654;
+    font-family: "Font Awesome 5 Free";
+    padding: 0 10px 0 0;
   }

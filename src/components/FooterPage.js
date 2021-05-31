@@ -8,7 +8,7 @@ const FooterPage = ()=>{
           <footer>
                 <Row>
                     <Col lg={4} md={4} sm={12} className=" my-3"> 
-                            <h3 style={{"color":"#18bc9c","textAlign":"center"}}>Services</h3>
+                            <h3 style={{"color":"#fac654","textAlign":"center"}}>Services</h3>
                             <ul className="services-list">
                                 <li>Web Development</li>
                                 <li>Web Designing</li>
@@ -21,7 +21,7 @@ const FooterPage = ()=>{
                             </ul>
                     </Col>
                     <Col lg={4} md={4} sm={12} className=" my-3"> 
-                            <h3 style={{"color":"#18bc9c","textAlign":"center"}}>Social</h3>
+                            <h3 style={{"color":"#fac654","textAlign":"center"}}>Social</h3>
                             <div className="d-flex justify-content-center">
                                 <ul class="social-network social-circle">
                                 <li><a href="https://www.facebook.com/harshpatel.patel.35175/" className="icoFacebook" title="Facebook"><i className="fab fa-facebook-f"></i></a></li>
@@ -34,10 +34,10 @@ const FooterPage = ()=>{
                             </div>			
                     </Col>
                     <Col lg={3} md={4} sm={12} className=" my-3"> 
-                            <h3 style={{"color":"#18bc9c","textAlign":"center"}}>Contact Me</h3>
+                            <h3 style={{"color":"#fac654","textAlign":"center"}}>Contact Me</h3>
                             <ul className="services-list">
                                 <li><i className="fas fa-phone"></i>  +91 8849430206 </li>
-                                <li><i className="fas fa-envelope"></i>  hrpatel8935@gmail.com </li>
+                                <li><i className="fas fa-envelope"></i>  ssvinfotech@gmail.com </li>
                                 <li><i className="fas fa-map"></i>  Surat Gujarat India </li>
 
 

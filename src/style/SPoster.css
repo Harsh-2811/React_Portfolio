@@ -1,0 +1,25 @@
+.parent {
+    width: 80vw;
+    height:80vh;
+    position: relative;
+  
+  }
+  .child{
+    width: 60vw;
+    height: 40vh;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-30%,-20%);
+  }
+  
+  .parent .stitle{
+    width: 50vw;
+    height:30vh;
+    position: absolute;
+    top:25%;
+    
+    left:50%;
+    font-size: 5rem !important;
+    transform: translate(-20%,-50%);
+  }

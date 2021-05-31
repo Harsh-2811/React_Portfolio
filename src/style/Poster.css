@@ -21,12 +21,34 @@
   transform: translate(-30%,-20%);
 }
 
+.parent .stitle{
+  width: 50vw;
+  height:30vh;
+  position: absolute;
+  top:25%;
+  
+  left:50%;
+  font-size: 5rem !important;
+  transform: translate(-20%,-50%);
+}
+
+@media only screen and (max-width: 576px) {
+  .banner-text h1{
+    font-size : 3rem !important;
+    margin-top: 2%;
+  }
+  .aboutDiv h3{
+    font-size: 0.9rem !important;
+    letter-spacing: 0.1rem;
+  }
+  
+}
 
 .letters {
     font-weight: bold;
     font-size: 2.5em;
     letter-spacing: 0.4rem;
-    color:#9cffec;
+    color:#fac654;
     text-transform: uppercase;
   }
  
@@ -38,4 +60,33 @@
     letter-spacing: 0.4rem;
     color:#fff;
     text-transform: uppercase;
+  }
+  .banner-text .title-tag,
+  .banner-text .title,
+  .banner-text p {
+    color: #fff !important;
+  }
+  
+  .banner-text .main-btn {
+    background-color: #fff;
+    color: #0c59db;
+  }
+  
+  .banner-text .main-btn:hover {
+    color: #fff;
+  }
+  .banner-text h1{
+    font-size : 6rem;
+    font-weight: bold;
+    letter-spacing: 0.2rem;
+  }
+
+  .banner-section .banner-content .title-tag {
+    font-size: 24px;
+    color: #69a1bb;
+  }
+
+  .title-tag{
+    text-transform: uppercase !important;
+    font-size: 1.5rem;
   }

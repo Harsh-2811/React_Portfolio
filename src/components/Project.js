@@ -3,7 +3,7 @@ import { Col } from 'react-bootstrap';
 import {Link} from 'react-router-dom';
 import '../style/Project.css';
 
-const Project = ({project})=>{
+const Project = ({project,index})=>{
     const type = project.type;
     var fontIcon;
     if(type === "Website"){
@@ -26,22 +26,12 @@ const Project = ({project})=>{
     return(
 
     
-        <Col md={4} lg={4} sm={12} >
-        <div className="content my-3"> 
-                <div className="content-overlay"></div> 
-                <img className="content-image" src={project.image} width="20%"/>
-                <div className="content-details fadeIn-bottom">
-                    <h3 className="content-title">{project.title}</h3>
-                    <p className="content-text">
-                        
-                    <Link to={`/projects/${project}`} style={{"textDecoration":"none","fontSize":"0.9rem"}}>
-                        <i className={fontIcon}></i> {project.type}
-                     </Link> &nbsp; 
-                    {weblink()}
-                    </p>
-                </div>
-                 </div>
-    </Col>
+        <div class="single-portfolio-item port-bg-1 design illustration" style={{"backgroundImage":`url('${project.image}')`}} key={index}>
+        <div class="portfolio-content">
+            <h4 class="portfolio-title">{project.title}</h4>
+            <div class="portfolio-category">{project.technology}</div>
+        </div>
+    </div>
     )
 }
 
