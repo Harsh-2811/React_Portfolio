@@ -24,7 +24,7 @@ const App =() =>{
       <Route exact path='/projects' component={(props)=> <ProjectScreen title="Projects" {...props}/>} />
       <Route exact path='/projects/:project' component={ProjectDetailScreen} />
       <Route exact path='/contacts' component={(props)=>{
-        return <ContactScreen title="Contact US" {...props}/>
+        return <ContactScreen title="Contact" {...props}/>
       }} />
       
 

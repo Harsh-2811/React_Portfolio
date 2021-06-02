@@ -19,21 +19,21 @@
     position: absolute;
     top:25%;
     left:50% !important;
-    font-size: 5rem ;
+    
     transform: translate(-20%,-50%);
   }
   @media only screen 
   and (max-width: 1024px) 
    {
     .parent .stitle{
-        left:40% !important;
+        left:35% !important;
       }
 }
 @media only screen 
 and (max-width: 768px) 
  {
   .parent .stitle{
-      left:35% !important;
+      left:30% !important;
     }
 }
   @media only screen and (max-width: 576px) {

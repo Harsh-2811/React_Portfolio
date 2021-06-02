@@ -32,17 +32,7 @@
   transform: translate(-20%,-50%);
 }
 
-@media only screen and (max-width: 576px) {
-  .banner-text h1{
-    font-size : 3rem !important;
-    margin-top: 2%;
-  }
-  .aboutDiv h3{
-    font-size: 0.9rem !important;
-    letter-spacing: 0.1rem;
-  }
-  
-}
+
 
 .letters {
     font-weight: bold;

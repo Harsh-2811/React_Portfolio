@@ -46,21 +46,9 @@ const ProjectScreen = (props)=>{
             "image":"/images/carsellwebsite.PNG",
             "type":"Website",
         },
-        {
-            "id":"5",
-            "title":"Billing Software",
-            "technology":"Java",
-            "image":"/images/Billing.PNG",
-            "type":"Desktop Software",
-        },
+       
         
-        {
-            "id":"7",
-            "title":"Meet and Chat ",
-            "technology":"React",
-            "image":"/images/React_Chat.JPG",
-            "type":"Website",
-        },
+       
     ]
 
 )
@@ -95,11 +83,11 @@ const ProjectScreen = (props)=>{
     return(
         <div>
             <SecondaryPoster title={props.title}/>
-        <section className="section-projects mt-4" style={{"marginBottom":"-16px"}}>
+        <section className="section-projects pt-4" style={{"marginBottom":"-16px"}}>
             <Container>
                     <Row className="row justify-content-center pb-3 ">
                 <Col md={7} className="heading-section ftco-animate text-center">
-                    <h2 className="my-4 project-title">Recent Work</h2>
+                    <h2 className="my-4 project-title text-white">Recent Work</h2>
                     
                     
                 </Col>
@@ -115,7 +103,7 @@ const ProjectScreen = (props)=>{
 
                    <Row className="my-3">
                    <Col md={12} lg={12} sm={12} >
-                   <div class="portfolio-list recent">
+                   <div className="portfolio-list recent p-3">
                         {
                             selectedprojects.map((project,index)=>{
                                 return(

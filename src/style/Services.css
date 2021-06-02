@@ -15,7 +15,11 @@ a.card {
     text-decoration: none;
 }
 
-
+.main-services{
+    background-image:url('../img/waves.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 .card {
     position: relative;
     border: 2px solid #10375d !important; 

@@ -49,7 +49,7 @@ const ServiceScreen = (props)=>{
     return(
        <div className="service_main">
            <SecondaryPoster title={props.title}/>
-            <section className="ftco-section ftco-services">
+            <section className="ftco-section ftco-services main-services">
     	<div className="overlay"></div>
     	<Container>
     		<Row className="row justify-content-center mb-5 pb-3">

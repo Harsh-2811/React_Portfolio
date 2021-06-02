@@ -37,7 +37,7 @@ const FooterPage = ()=>{
                             <h3 style={{"color":"#fac654","textAlign":"center"}}>Contact Me</h3>
                             <ul className="services-list">
                                 <li><i className="fas fa-phone"></i>  +91 8849430206 </li>
-                                <li><i className="fas fa-envelope"></i>  ssvinfotech@gmail.com </li>
+                                <li><i className="fas fa-envelope"></i>  ssvinfotech28@gmail.com </li>
                                 <li><i className="fas fa-map"></i>  Surat Gujarat India </li>
 
 
