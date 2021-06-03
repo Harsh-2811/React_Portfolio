@@ -153,14 +153,122 @@ const HomeScreen = (props)=>{
                         
                     </Col>
                 </Row>
-                <Row>
-                    <Col md={6} lg={6} sm={12} className="p-2">
-                        <img src="/images/languages.png"/>
-                    </Col>
-                    <Col md={6} lg={6} sm={12} className="p-2">
-                        <img src="/images/databases.png"/>
-                    </Col>
-                </Row>
+               
+                
+              <Row>
+              <div className="col-sm-3  p-3" >
+						<div className="effect-image-1 d-flex justify-content-center " >
+							<img src="/images/Slider_Python.png" width="50%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>Python</h3>
+                            </div>
+						</div>
+					</div>
+
+                    <div className="col-sm-3  p-3" >
+						<div className="effect-image-1 d-flex justify-content-center" >
+							<img src="/images/django.png" width="42%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>Django</h3>
+                            </div>
+						</div>
+					</div>
+                    <div className="col-sm-3  p-3" >
+						<div className="effect-image-1 d-flex justify-content-center p-3" >
+							<img src="/images/javascript.png" width="70%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>JavaScript</h3>
+                            </div>
+						</div>
+					</div>
+
+                    <div className="col-sm-3 p-3" >
+						<div className="effect-image-1 d-flex justify-content-center" >
+							<img src="/images/react.png" width="70%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>React</h3>
+                            </div>
+						</div>
+					</div>
+
+                    <div className="col-sm-3  p-3" >
+						<div className="effect-image-1 d-flex justify-content-center" >
+							<img src="/images/bootstrap.png" width="90%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>BootStrap</h3>
+                            </div>
+						</div>
+					</div>
+
+                    <div className="col-sm-3  p-3" >
+						<div className="effect-image-1 d-flex justify-content-center p-3" >
+							<img src="/images/java.png" width="33%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>Java</h3>
+                            </div>
+						</div>
+					</div>
+
+                    <div className="col-sm-3  p-3" >
+						<div className="effect-image-1 d-flex justify-content-center" >
+							<img src="/images/html.png" width="65%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>HTML and CSS</h3>
+                            </div>
+						</div>
+					</div>
+
+                    <div className="col-sm-3  p-3" >
+						<div className="effect-image-1 d-flex justify-content-center p-3" >
+							<img src="/images/woo.png" width="73%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>Woo Commerce</h3>
+                            </div>
+						</div>
+					</div>
+
+
+                    <div className="col-sm-3  p-3" >
+						<div className="effect-image-1 d-flex justify-content-center p-3" >
+							<img src="/images/postgre.png" width="42%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>PostgreSQL</h3>
+                            </div>
+						</div>
+					</div>
+
+                    <div className="col-sm-3  p-3" >
+						<div className="effect-image-1 d-flex justify-content-center p-3" >
+							<img src="/images/mysql.png" width="63%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>MySQL</h3>
+                            </div>
+						</div>
+					</div>
+
+                    <div className="col-sm-3  p-3" >
+						<div className="effect-image-1 d-flex justify-content-center" >
+							<img src="/images/mongo.png" width="49%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>MongoDB</h3>
+                            </div>
+						</div>
+					</div>
+
+                    <div className="col-sm-3  p-3" >
+						<div className="effect-image-1 d-flex justify-content-center p-3" >
+							<img src="/images/sqlite.png" width="90%" alt="image-1"/>
+							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
+                                <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>SQlite3</h3>
+                            </div>
+						</div>
+					</div>
+                    
+                    
+
+                    
+              </Row>
+                
             </Container>
             
     </section>
