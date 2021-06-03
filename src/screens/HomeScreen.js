@@ -1,13 +1,27 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import Poster from '../components/Poster';
-import Services from '../components/Services';
+
+import ContactForm from '../components/ContactForm';
 import ScrollAnimation from 'react-animate-on-scroll'
 import {Container,Row,Col,Button} from 'react-bootstrap'
-import '../style/main.css'
-import Certificates from '../components/Certificates';
+import '../style/main.css';
+import swal from 'sweetalert';
+import CounterInput from 'react-bootstrap-counter';
 
 const HomeScreen = (props)=>{
+    
+    const [message, setMessage] = useState('')
+    
 
+    const makeMessage = (data)=>{
+        setMessage(data)
+        if(data.variant == "success"){
+            swal("Success!", data.msg, data.variant);
+        }
+        else{
+            swal("Oops!", data.msg, data.variant);
+        }
+    };
     const certi_list = [
         "/images/Django.jpg",
         "/images/React.jpg",
@@ -149,6 +163,24 @@ const HomeScreen = (props)=>{
                 </Row>
             </Container>
             
+    </section>
+
+    
+
+    <section className="contact-section mt-3 p-3" id="contacts">
+    <Container>
+                
+                <Row className=" ">
+                <Col md={6} className=" ">
+                    <img src="/images/ContactUs.png" />
+                </Col>
+                <Col md={6} className="heading-section ftco-animate">
+                    <h2 className="my-4 project-title" style={{"color":"#10375d","textAlign":'center'}}>Contact Us</h2>
+                    <ContactForm makeMessage={makeMessage}/>
+                </Col>
+                </Row>
+                
+                </Container>
     </section>
             </div>
       

@@ -38,7 +38,7 @@ const ServiceScreen = (props)=>{
         },
 
         {
-            "title":"Databse Design",
+            "title":"Database Design",
             "desc":"Desktop Softwares are essential for all small stores and Buisness. I develop Desktop Softwares using Java and Java Swing Library with Better User Interface and Secure Backend",
             "img":"/images/Database.png"
             

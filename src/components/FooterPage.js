@@ -13,7 +13,7 @@ const FooterPage = ()=>{
                                 <li>Web Development</li>
                                 <li>Web Designing</li>
 
-                                <li>Deskto Softwares</li>
+                                <li>Desktop Softwares</li>
 
                                 <li>E-Commerce Solutions</li>
 

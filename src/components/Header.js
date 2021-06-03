@@ -34,10 +34,10 @@ const Header = ()=>{
                             <LinkBook smooth  to='/#section-technologies' className="animate_link nav-link">
                                 <i className="fas fa-code pr-2"></i>  Technologies
                             </LinkBook>
-                            <LinkContainer exact to='/contacts'>
-                            <Nav.Link className="animate_link"><i className="fas fa-envelope pr-2 "></i> Contact Me</Nav.Link>
+                            <LinkBook to='/#contacts' className="animate_link nav-link">
+                            <i className="fas fa-envelope pr-2 "></i> Contact Us
 
-                            </LinkContainer>
+                            </LinkBook>
                     </Nav>         
 
                                
