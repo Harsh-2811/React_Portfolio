@@ -193,7 +193,7 @@ const HomeScreen = (props)=>{
 
                     <div className="col-sm-3  p-3" >
 						<div className="effect-image-1 d-flex justify-content-center" >
-							<img src="/images/bootstrap.png" width="90%" alt="image-1"/>
+							<img src="/images/Bootstrap.png" width="90%" alt="image-1"/>
 							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
                                 <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>BootStrap</h3>
                             </div>
@@ -211,7 +211,7 @@ const HomeScreen = (props)=>{
 
                     <div className="col-sm-3  p-3" >
 						<div className="effect-image-1 d-flex justify-content-center" >
-							<img src="/images/html.png" width="65%" alt="image-1"/>
+							<img src="/images/Html.png" width="65%" alt="image-1"/>
 							<div className="overlay simple-overlay-1 d-flex align-items-center justify-content-center">
                                 <h3 style={{'color':"#fac654",'fontWeight':'bold'}}>HTML and CSS</h3>
                             </div>

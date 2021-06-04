@@ -47,6 +47,14 @@ const ProjectScreen = (props)=>{
             "type":"Website",
         },
        
+        {
+            "id":"5",
+            "title":"Interior Designer Website",
+            "technology":"React and Django",
+            "image":"/images/Interior.PNG",
+            "type":"Website",
+        },
+       
         
        
     ]
