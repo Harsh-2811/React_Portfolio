@@ -22,7 +22,7 @@ const Header = ()=>{
                                 <Nav.Link className="animate_link " ><i className="fas fa-home pr-2"></i>&nbsp; Home</Nav.Link>
                             </LinkContainer>
                             <LinkBook to='/#aboutme' className="animate_link nav-link">
-                            <i className="fas fa-info pr-2"></i>  About Us
+                            <i className="fas fa-info pr-2"></i>&nbsp; About Us
                             </LinkBook>
                             <LinkContainer exact to='/services'>
                                 <Nav.Link className="animate_link"><i className="fas fa-server pr-2"></i>&nbsp; Services</Nav.Link>

@@ -1,12 +1,12 @@
 import React,{useState,useEffect} from 'react';
 import { Navbar, Nav, Container, Row, NavDropdown,Col,Button } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap';
-
+import { useLocation } from "react-router-dom";
 import '../style/Project.css';
 import Project from '../components/Project';
 import SecondaryPoster from '../components/SecondaryPoster';
 const ProjectScreen = (props)=>{
-    
+    const { pathname } = useLocation();
     const [tech_list,set_TechList] = useState([
         "All",
         "Django",
@@ -67,8 +67,8 @@ const ProjectScreen = (props)=>{
     
     useEffect(()=>{
         setSelectedType("All");
-        
-    },[])
+        window.scrollTo(0, 0);
+    },[pathname])
 
     const changeSelectedType = (type)=>{
             setSelectedType(type)
