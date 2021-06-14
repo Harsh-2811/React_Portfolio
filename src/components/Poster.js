@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-import {Container} from 'react-bootstrap';
+import {Container,Row,Col} from 'react-bootstrap';
 import Typed from 'react-typed'
 import '../style/Poster.css'
 
@@ -7,7 +7,7 @@ import '../style/Poster.css'
 const poster = {
     "height":"100vh",
     
-    "backgroundImage":'linear-gradient(rgba(16,55,93,0.8),rgba(16,55,93,0.8)),url("/images/banner-01.jpg")',
+    "backgroundImage":'linear-gradient(to right,rgba(16,55,93,0.5),rgba(16,55,93,0.9)),url("/images/banner-01.jpg")',
     "backgroundSize":"cover"
 }
 const Poster = (props)=>{
@@ -18,8 +18,11 @@ const Poster = (props)=>{
                   <div className="child">
                   
                     <div className="">   
-                    <div class="banner-text">
-                            <div class="banner-content">
+                    <div className="banner-text">
+                            <Row>
+                                
+                                <Col lg={12}>
+                                <div class="banner-content">
                                 <span data-animation="fadeInUp" data-delay="0.3s" className="title-tag">
                                     IT Business Consulting
                                 </span>
@@ -31,6 +34,8 @@ const Poster = (props)=>{
                                 </p>
                                 
                             </div>
+                                </Col>
+                            </Row>
                         </div>
                     </div>
                     <div className='role mt-5 pt-5' >

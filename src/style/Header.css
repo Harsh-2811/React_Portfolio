@@ -26,3 +26,46 @@
     position: sticky !important;
     top: 0;
   }
+
+  .mynav{
+    background-color: transparent !important;
+    
+  }
+
+  .mynav a{
+    color : #fff !important;
+    font-weight: bold !important;
+  }
+  .mynav a.active{
+    color: #fac654 !important;
+  }
+
+ .mynav1{
+  background-color: ghostwhite !important;
+ }
+  .mynav1 a{
+    
+    color : #10375d !important;
+    font-weight: bold !important;
+  }
+  .mynav1 a.active{
+    border-bottom: 5px solid #fac654;
+    padding-bottom: 3px
+    
+    
+  }
+
+  .blacktoggle{
+    color:#10375d !important;
+    
+  }
+  .navbar-dark .navbar-toggler-icon {
+    background-image: url("../img/hambergur.png") !important;
+
+}
+
+
+.navbar-dark .navbar-toggler {
+    
+    border-color: transparent !important;
+}

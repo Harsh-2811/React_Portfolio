@@ -7,7 +7,7 @@ import '../style/SPoster.css'
 const poster = {
     "height":"60vh",
     
-    "backgroundImage":'linear-gradient(rgba(16,55,93,0.8),rgba(16,55,93,0.8)),url("/images/banner-02.jpg")',
+    "backgroundImage":'linear-gradient(to right,rgba(16,55,93,0.5),rgba(16,55,93,0.9)),url("/images/banner-02.jpg")',
     "backgroundSize":"cover"
 }
 const SecondaryPoster = (props)=>{

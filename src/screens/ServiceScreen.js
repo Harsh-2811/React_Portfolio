@@ -48,7 +48,7 @@ const ServiceScreen = (props)=>{
     ]
     const works_for =[
         {"title":'Finance','img':'/images/finance.png'},{"title":"Business","img":"/images/business.png"},
-        {"title":'Education','img':'/images/Education.png'},{"title":'Health','img':'/images/health.png'},
+        {"title":'Education','img':'/images/Education.png'},{"title":'Health','img':'/images/Health.png'},
         {"title":'Shopping','img':'/images/market.png'},{"title":'Games','img':'/images/gamming.png'},
         {"title":'Logistic','img':'/images/logistic.png'},{"title":'Social Networking','img':'/images/social.png'}
     ]

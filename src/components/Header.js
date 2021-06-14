@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useEffect,useState} from 'react';
 import { Navbar, Nav, Container, Row, NavDropdown } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import { HashLink as LinkBook } from 'react-router-hash-link';
@@ -6,15 +6,28 @@ import {useLocation} from 'react-router-dom'
 import '../style/Header.css'
 const Header = ()=>{
     const location = useLocation();
-    console.log(location.pathname)
+    const [navClass,setNavClass] = useState('mynav')
+    const [toogleClassName,settoogleClassName] = useState(' ')
+
+    useEffect(()=>{
+        document.addEventListener("scroll", () => {
+            const mynav = window.scrollY < 100 ? "mynav" : "mynav1";
+            const toogleClass = window.scrollY < 100 ? " " : "blacktoggle";
+
+
+      
+            setNavClass(mynav)
+            settoogleClassName(toogleClass)
+          });
+    },[])
     return(
         <div>
 
 
-           <Navbar bg="primary" variant="dark" expand="lg" collapseOnSelect fixed="top">
+           <Navbar bg="" className={navClass} variant="dark" expand="lg" collapseOnSelect fixed="top">
               <Container>
-              <Navbar.Brand href="/" style={{'fontSize':'1.5rem','color':'#fac654','letterSpacing':'0.1rem','fontWeight':'bold'}}>SSV INFOTECH</Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" />
+              <Navbar.Brand href="/" ><img src="/images/Logo2.png" width="70%" /></Navbar.Brand>
+                <Navbar.Toggle aria-controls="basic-navbar-nav" className={toogleClassName} />
                 <Navbar.Collapse id="basic-navbar-nav" >
                     
                     <Nav  activeKey={location.pathname} className="ml-auto">
