@@ -49,8 +49,8 @@
     font-weight: bold !important;
   }
   .mynav1 a.active{
-    border-bottom: 5px solid #fac654;
-    padding-bottom: 3px
+    border-bottom: 5px solid #10375d;
+    padding-bottom: 3px;
     
     
   }
@@ -68,4 +68,30 @@
 .navbar-dark .navbar-toggler {
     
     border-color: transparent !important;
+}
+
+@media only screen and (max-width: 600px) {
+  .toggleBtn {
+    position: fixed;
+    top : 4%;
+    right: 0%;
+  }
+}
+@media screen and (min-width: 1024px) and (max-width: 1024px) {
+  .logo {
+    width: 80% !important;
+  }
+  #basic-navbar-nav{
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 768px) {
+  .logo {
+    width: 100% !important;
+  }
+  #basic-navbar-nav{
+    width: 100% !important;
+  }
+ 
 }

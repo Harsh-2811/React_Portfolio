@@ -1,5 +1,5 @@
 import React,{useEffect,useState} from 'react';
-import { Navbar, Nav, Container, Row, NavDropdown } from 'react-bootstrap'
+import { Navbar, Nav, Container, Row, NavDropdown,Col } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import { HashLink as LinkBook } from 'react-router-hash-link';
 import {useLocation} from 'react-router-dom'
@@ -7,27 +7,43 @@ import '../style/Header.css'
 const Header = ()=>{
     const location = useLocation();
     const [navClass,setNavClass] = useState('mynav')
+    const [flag,setFlag] = useState(0)
+
     const [toogleClassName,settoogleClassName] = useState(' ')
+    
 
     useEffect(()=>{
         document.addEventListener("scroll", () => {
             const mynav = window.scrollY < 100 ? "mynav" : "mynav1";
-            const toogleClass = window.scrollY < 100 ? " " : "blacktoggle";
-
-
-      
+            const toogleClass = window.scrollY < 100 ? " " : "blacktoggle";     
             setNavClass(mynav)
             settoogleClassName(toogleClass)
           });
     },[])
+
+    const addWhiteBackground = ()=>{
+        if(flag == 0){
+            setFlag(1)
+            setNavClass('mynav1')
+        }
+        if(flag == 1){
+            setFlag(0)
+            setNavClass('mynav')
+        }
+        
+    }
     return(
         <div>
 
 
            <Navbar bg="" className={navClass} variant="dark" expand="lg" collapseOnSelect fixed="top">
               <Container>
-              <Navbar.Brand href="/" ><img src="/images/Logo2.png" width="70%" /></Navbar.Brand>
-                <Navbar.Toggle aria-controls="basic-navbar-nav" className={toogleClassName} />
+                
+                    <Navbar.Brand href="/" ><img src="/images/Logo2.png" width="70%"  className="logo" /></Navbar.Brand>
+                    
+                    
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={addWhiteBackground} className={`${toogleClassName} toggleBtn`} />
+                   
                 <Navbar.Collapse id="basic-navbar-nav" >
                     
                     <Nav  activeKey={location.pathname} className="ml-auto">
