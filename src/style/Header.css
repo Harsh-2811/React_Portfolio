@@ -74,7 +74,7 @@
   .toggleBtn {
     position: fixed;
     top : 4%;
-    right: 0%;
+    right: 2%;
   }
 }
 @media screen and (min-width: 1024px) and (max-width: 1024px) {
@@ -94,4 +94,33 @@
     width: 100% !important;
   }
  
+}
+
+.toggledNav{
+  background-color: ghostwhite !important;
+}
+.toggledNav a{
+    
+  color : #10375d !important;
+  font-weight: bold !important;
+}
+.toggledNav a.active{
+  border-bottom: 5px solid #10375d;
+  padding-bottom: 3px;
+  
+  
+}
+
+
+@media only screen and (max-width: 600px) {
+  .tech_name {
+    font-size: 1.8rem;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .tech_name {
+    font-size: 1.2rem;
+  }
 }

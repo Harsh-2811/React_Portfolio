@@ -7,7 +7,7 @@ import '../style/Header.css'
 const Header = ()=>{
     const location = useLocation();
     const [navClass,setNavClass] = useState('mynav')
-    const [flag,setFlag] = useState(0)
+   
 
     const [toogleClassName,settoogleClassName] = useState(' ')
     
@@ -21,28 +21,18 @@ const Header = ()=>{
           });
     },[])
 
-    const addWhiteBackground = ()=>{
-        if(flag == 0){
-            setFlag(1)
-            setNavClass('mynav1')
-        }
-        if(flag == 1){
-            setFlag(0)
-            setNavClass('mynav')
-        }
-        
-    }
+   
     return(
         <div>
 
 
-           <Navbar bg="" className={navClass} variant="dark" expand="lg" collapseOnSelect fixed="top">
+           <Navbar id="fullNav" bg="" className={navClass} variant="dark" expand="lg" collapseOnSelect fixed="top">
               <Container>
                 
                     <Navbar.Brand href="/" ><img src="/images/Logo2.png" width="70%"  className="logo" /></Navbar.Brand>
                     
                     
-                    <Navbar.Toggle aria-controls="basic-navbar-nav" onClick={addWhiteBackground} className={`${toogleClassName} toggleBtn`} />
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" id="toggleBtn" className={`${toogleClassName} toggleBtn`} />
                    
                 <Navbar.Collapse id="basic-navbar-nav" >
                     

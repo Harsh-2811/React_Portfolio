@@ -91,15 +91,10 @@ const ServiceScreen = (props)=>{
                     <div className="card card-flip h-100">
                         <div className="card-front text-white" >
                             <div className="card-body d-flex justify-content-center align-itmes-center"  >
-                                <img src={item.img} width="70%" />                           
+                                <img src={item.img} width="50%" />                           
                             </div>
                         </div>
-                        <div className="card-back">
-                            <div className="card-body d-flex justify-content-center align-items-center" style={{'height':'100%'}}>
-                                <h2 className="card-title" style={{'color':'#10375d','fontSize':'2.2rem'}}>{item.title}</h2>
-                                
-                            </div>
-                        </div>
+                        
                     </div>
 
             </Col>

@@ -11,7 +11,7 @@ const Services = (props)=>{
 
             {services_list.map((service,index)=>{
                 return(
-                    <div className="col-lg-4 col-sm-4 my-3 pb-5" key={index}>
+                    <div className="col-lg-4  col-xs-12 col-md-4 col-sm-4 my-3 pb-5" key={index}>
                     <a className="card">
                         <div className=" box-shadow  rounded-circle mx-auto text-center bg-set service-image" style={{"width": "200px", "height": "200px", "marginTop": "-65px"}}><img src={service.img} width="100%"/></div>
                         <div className="card-body text-center"> 
