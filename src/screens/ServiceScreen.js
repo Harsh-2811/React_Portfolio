@@ -9,39 +9,138 @@ const ServiceScreen = (props)=>{
     const services_list = [
         {
             "title":"Web Developement",
-            "desc":"Get Fully Customized , reliable and Secure Web Applications for Business. Secured and Rapid APIS is Additional",
-            "img":"/images/Web_Development.png"
+            "desc":"Building a Website and Web Application is very afforable and flexibale approach. We Develop fully customized,secured and Rapid Websites and Web Applications as per client's Requirements.",
+            "img":"/images/Web_Development.png",
+            "technologies":[{
+                'name':'Python',
+                'icon':'devicon-python-plain'
+            },
+            {
+                'name':'Django',
+                'icon':'devicon-django-plain'
+            },
+            {
+                'name':'React',
+                'icon':'devicon-react-plain'
+            },
+            {
+                'name':'Javascript',
+                'icon':'devicon-javascript-plain'
+            },
+            {
+                'name':'Redux',
+                'icon':'devicon-redux-original'
+            },
+           
+            {
+                'name':'Flask',
+                'icon':'devicon-flask-plain'
+            },
+            {
+                'name':'NodeJS',
+                'icon':'devicon-nodejs-plain'
+            }
+        ]
 
         },
         {
-            "title":"E-Commerce Solution",
-            "desc":"Get Fully Customized , reliable and Secure Web Applications for Business. Secured and Rapid APIS is Additional",
-            "img":"/images/ECommService.png"
+            "title":"E-Commerce & CMS  Solution",
+            "desc":"SSV INFOTECH will help you to push your store and e-commerce business on internet. We create customized and user friendly e-commerce platform and CMS  using various latest frameworks and technologies.",
+            "img":"/images/ECommService.png",
+            "technologies":[{
+                'name':'Wordpress',
+                'icon':'devicon-wordpress-plain'
+            },
+            {
+                'name':'Magento',
+                'icon':'devicon-magento-original'
+            },
+            {
+                'name':'Django & React ',
+                'icon':'devicon-django-plain'
+            }
+        ]
 
         },
         {
             "title":"Web Designing",
-            "desc":"Attractive and Responsive UI or Frontend are most neccessary for Website to attract Users to use websites.",
-            "img":"/images/Web_Design.png"
+            "desc":"To get and attract more users to your website, the Design of the Website will play an important Role. We create a Responsive and Eye-Catching Web Frontend for you.",
+            "img":"/images/Web_Design.png",
+            "technologies":[{
+                'name':'HTML',
+                'icon':'devicon-html5-plain'
+            },
+            {
+                'name':'CSS',
+                'icon':'devicon-css3-plain'
+            },
+            {
+                'name':'Bootstrap',
+                'icon':'devicon-bootstrap-plain'
+            },
+            {
+                'name':'JQuery',
+                'icon':'devicon-jquery-plain'
+            },
+            {
+                'name':'Tailwind',
+                'icon':'devicon-tailwindcss-plain'
+            },
+
+        ]
             
         },
         {
             "title":"Mobile Applications",
-            "desc":"We Develop Mobile Apps with proper code strucutre and Attractive UI by using Latest and Trending Technologies.",
-            "img":"/images/MobileApps.png"
+            "desc":"We SSV INFOTECH develop creative Mobile Applications with high performance and Better User Interfaces. We use Native and Hybrid frameworks for development of Mobile Applications. ",
+            "img":"/images/MobileApps.png",
+            "technologies":[{
+                'name':'React Native',
+                'icon':'devicon-react-plain'
+            },
+            {
+                'name':'Android',
+                'icon':'devicon-android-plain'
+            },
+            {
+                'name':'Flutter',
+                'icon':'devicon-flutter-plain'
+            }
+            ]
             
         },
-        {
-            "title":"Desktop Softwares",
-            "desc":"Desktop Softwares are essential for all small stores and Buisness. I develop Desktop Softwares using Java and Java Swing Library with Better User Interface and Secure Backend",
-            "img":"/images/Desktop.png"
-            
-        },
+        
 
         {
-            "title":"Database Design",
-            "desc":"Desktop Softwares are essential for all small stores and Buisness. I develop Desktop Softwares using Java and Java Swing Library with Better User Interface and Secure Backend",
-            "img":"/images/Database.png"
+            "title":"Database and Server Tools",
+            "desc":"Data Storage and Management is most important point of every dynamic Web and Mobile Applications. We use latest and secured database storage for our apps. Deployment of Applications in proper and secured way on server is Necessary and Like paying attention.",
+            "img":"/images/Database.png",
+            "technologies":[{
+                'name':'MySQL',
+                'icon':'devicon-mysql-plain'
+            },
+            {
+                'name':'PostgreSQL',
+                'icon':'devicon-postgresql-plain'
+            },
+            {
+                'name':'MongoDB',
+                'icon':'devicon-mongodb-plain'
+            },
+            {
+                'name':'Heroku',
+                'icon':'devicon-heroku-plain'
+            },
+            {
+                'name':'Digital Ocean',
+                'icon':'devicon-digitalocean-plain'
+            },
+            {
+                'name':'AWS',
+                'icon':'devicon-amazonwebservices-original'
+            }
+
+        ]
             
         },
       
@@ -62,7 +161,7 @@ const ServiceScreen = (props)=>{
             <section className="ftco-section ftco-services main-services">
     	<div className="overlay"></div>
     	<Container>
-    		<Row className="row justify-content-center mb-5 pb-3">
+    		<Row className="row justify-content-center  pb-2">
           <Col md={7} className="heading-section ftco-animate text-center">
             <h2 className="my-4 service-title">My Services</h2>
             
@@ -74,36 +173,7 @@ const ServiceScreen = (props)=>{
         
     	</Container>
     </section>
-        <section className="workfor mt-4 p-3">
-        <Container>
-        <Row className="row justify-content-center pb-3 ">
-                <Col md={7} className="heading-section ftco-animate text-center">
-                    <h2 className="my-4 project-title ">We Work For</h2>
-                    
-                    
-                </Col>
-                </Row>
-            <Row>
-            {
-                works_for.map((item,index)=>{
-                    return(
-                        <Col sm={3} key={index} className="p-4">
-                    <div className="card card-flip h-100">
-                        <div className="card-front text-white" >
-                            <div className="card-body d-flex justify-content-center align-itmes-center"  >
-                                <img src={item.img} width="50%" />                           
-                            </div>
-                        </div>
-                        
-                    </div>
-
-            </Col>
-                    )
-                })
-            }
-            </Row>
-        </Container>
-        </section>
+       
        </div>
     )
 }
