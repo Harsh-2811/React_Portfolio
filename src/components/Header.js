@@ -50,9 +50,7 @@ const Header = ()=>{
                             <LinkContainer exact to='/projects'>
                                 <Nav.Link className="animate_link"><i className="fas fa-briefcase pr-2"></i>&nbsp; Projects</Nav.Link>
                                 </LinkContainer>
-                            <LinkBook smooth  to='/#section-technologies' className="animate_link nav-link">
-                                <i className="fas fa-code pr-2"></i>&nbsp; Technologies
-                            </LinkBook>
+                            
                             <LinkBook to='/#contacts' className="animate_link nav-link">
                             <i className="fas fa-envelope pr-2 "></i>&nbsp; Contact Us
 

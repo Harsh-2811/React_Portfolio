@@ -26,11 +26,6 @@ const App =() =>{
       <Route exact path='/contacts' component={(props)=>{
         return <ContactScreen title="Contact" {...props}/>
       }} />
-      
-
-
-
-    
   </main>
       </Switch>
       <ScrollTop/>

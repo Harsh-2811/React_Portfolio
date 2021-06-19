@@ -405,3 +405,106 @@
      
     }
   
+    .service-item {
+      border-radius: 10px;
+      background: #fff;
+      -webkit-box-shadow: 0px 10px 30px rgba(225, 225, 225, 0.64);
+      box-shadow: 0px 10px 20px #10375d;
+      padding: 40px 25px 55px;
+      -webkit-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+      position: relative;
+      z-index: 1;
+      font-weight: bold !important;
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .service-item {
+        padding: 35px 20px 40px;
+      }
+    }
+    
+    .service-item .icon {
+      height: 110px;
+      width: 110px;
+      line-height: 1;
+      background-color: rgba(12, 89, 219, 0.1);
+      -webkit-transition: all 0.3s ease-out 0s;
+      -o-transition: all 0.3s ease-out 0s;
+      transition: all 0.3s ease-out 0s;
+      margin-bottom: 20px;
+      font-size: 50px;
+      color: #0c59db;
+      display: -webkit-inline-box;
+      display: -ms-inline-flexbox;
+      display: inline-flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+      border-radius: 50%;
+    }
+    
+    @media (min-width: 992px) and (max-width: 1199px) {
+      .service-item .icon {
+        height: 80px;
+        width: 80px;
+        font-size: 30px;
+      }
+    }
+    
+    .service-item.text-center .icon {
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    
+.service-item::before {
+	position: absolute;
+	content: "";
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-image: url(../img/service-dot.png);
+	background-position: center;
+	background-repeat: no-repeat;
+	z-index: -1;
+	-webkit-transition: all 0.3s ease-out 0s;
+	-o-transition: all 0.3s ease-out 0s;
+	transition: all 0.3s ease-out 0s;
+	opacity: 0;
+	visibility: hidden;
+}
+
+.service-item:hover {
+	background-color: #10375d;
+	-webkit-box-shadow: 0px 10px 30px rgba(239, 239, 239, 0.79);
+	box-shadow: 0px 10px 30px rgba(239, 239, 239, 0.79);
+}
+
+.service-item:hover .icon {
+	background-color: #fff;
+}
+
+.service-item:hover .title a,
+.service-item:hover p {
+	color: #fff;
+}
+
+.service-item:hover::before {
+	opacity: 1;
+	visibility: visible;
+}
+.service-item a{
+  text-decoration: none;
+  font-weight: bold;
+  color:#10375d
+}
+
+.service-item p{
+  font-size: 1rem;
+}

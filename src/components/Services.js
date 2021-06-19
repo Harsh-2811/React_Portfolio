@@ -27,22 +27,29 @@ const Services = (props)=>{
                                 <p style={{'font-weight':'bold','font-size':'1rem'}} className="my-4">
                                     {service.desc}
                                 </p>
-                                <p>
-                                <h5 style={{'font-weight':'bold'}}>Technologies</h5>
-                                <ul className="list-inline">
-                                        {
-                                            service.technologies.map((tech,index)=>{
-                                                return(
-                                                    <li className="px-2 py-1" style={{'color':'#10375d'}}>
-                                                <i className={tech.icon} style={{'font-size':'1.5rem'}} ></i> <span style={{'font-weight':'bold','margin-left':'2%'}}>{tech.name}</span>
-                                                </li>
-                                                )
-                                            })
-                                        }
+                            
+                                <Container>
+                                    <Row>
+                                        <Col sm={6} md={6} lg={6}>
+                                        <h5 style={{'font-weight':'bold'}}>Technologies</h5>
+                                            <ul className="list-inline">
+                                                    {
+                                                        service.technologies.map((tech,index)=>{
+                                                            return(
+                                                                <li className="px-2 py-1" style={{'color':'#10375d'}}>
+                                                            <i className={tech.icon} style={{'font-size':'1.5rem'}} ></i> <span style={{'font-weight':'bold','margin-left':'2%'}}>{tech.name}</span>
+                                                            </li>
+                                                            )
+                                                        })
+                                                    }
 
-                                       
-                                    </ul>
-                                </p>
+                                                
+                                            </ul>
+                                        </Col>
+                                        
+                                    </Row>
+                                </Container>
+                                
                         </div>  
                     </div>
                     <div className="col-lg-1">
@@ -60,22 +67,30 @@ const Services = (props)=>{
                                 <p style={{'font-weight':'bold','font-size':'1rem'}} className="mt-2">
                                     {service.desc}
                                 </p>
-                                <p>
-                                <h5 style={{'font-weight':'bold'}}>Technologies</h5>
-                                <ul className="list-inline">
-                                        {
-                                            service.technologies.map((tech,index)=>{
-                                                return(
-                                                    <li className="px-2 py-1" style={{'color':'#10375d'}}>
-                                                <i className={tech.icon} style={{'font-size':'1.5rem'}} ></i> <span style={{'font-weight':'bold','margin-left':'2%'}}>{tech.name}</span>
-                                                </li>
-                                                )
-                                            })
-                                        }
+                                
+                                
+                                <Container>
+                                    <Row>
+                                        <Col sm={6} md={6} lg={6}>
+                                        <h5 style={{'font-weight':'bold'}}>Technologies</h5>
+                                            <ul className="list-inline">
+                                                    {
+                                                        service.technologies.map((tech,index)=>{
+                                                            return(
+                                                                <li className="px-2 py-1" style={{'color':'#10375d'}}>
+                                                            <i className={tech.icon} style={{'font-size':'1.5rem'}} ></i> <span style={{'font-weight':'bold','margin-left':'2%'}}>{tech.name}</span>
+                                                            </li>
+                                                            )
+                                                        })
+                                                    }
 
-                                       
-                                    </ul>
-                                </p>
+                                                
+                                            </ul>
+                                        </Col>
+                                        
+                                    </Row>
+                                </Container>
+                                
                         </div>  
                     </div>
                     <div className="col-lg-6  col-xs-12 col-md-6 col-sm-12 p-3" >
@@ -97,39 +112,7 @@ const Services = (props)=>{
             })}
            
        
-                   <Row>
-                       <Col lg={1} md={1}>
-                       
-                       </Col>
-                       <Col lg={1} md={1}>
-                       
-                       </Col>
-                       <Col lg={4} md={4} sm={12} xs={12}>
-                       
-                       <h3 style={{'font-weight':'bold','font-size':'1.6rem','color':'#10375d'}} className="mt-5 text-center">Machine Learning</h3>
-                       <div className="tech-img p-2 ">
-                             <img src="/images/ML.png" style={{'filter': 'drop-shadow(3px 3px 3px #10375d)'}} className="service-image"  width="90%"/>
-                        </div>
-                       </Col>
-                      
-
-
-
-                     
-                       <Col lg={4} md={4} sm={12} xs={12}>
-                       
-                       <h3 style={{'font-weight':'bold','font-size':'1.6rem','color':'#10375d'}} className="mt-5 text-center">Block Chain</h3>
-                       <div className="tech-img p-2 ">
-                             <img src="/images/Blockchain.png" style={{'filter': 'drop-shadow(3px 3px 3px #10375d)'}} className="service-image"  width="90%"/>
-                        </div>
-                       </Col>
-                       <Col lg={1} md={1}>
-                       
-                       </Col>
-                       <Col lg={1} md={1}>
-                       
-                       </Col>
-                   </Row>
+           
          
        </>
     );

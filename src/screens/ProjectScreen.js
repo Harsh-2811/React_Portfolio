@@ -9,11 +9,11 @@ const ProjectScreen = (props)=>{
     const { pathname } = useLocation();
     const [tech_list,set_TechList] = useState([
         "All",
-        "Django",
-        
         "Python",
+        "Web Design",
+        "Javascript",
         "React",
-        "Java"
+        "React Native"
     ]); 
 
    const [projects,setProjects] = useState( 

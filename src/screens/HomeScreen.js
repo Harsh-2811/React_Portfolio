@@ -12,6 +12,49 @@ const HomeScreen = (props)=>{
     
     const [message, setMessage] = useState('')
     
+    const Abstract_Services = [
+        {
+            "title":"Web Development",
+            "image":"/images/Abstract_Develop.png",
+            
+        },
+        {
+            "title":"Web Designing",
+            "image":"/images/Abstract_Design.png",
+            
+        },
+        {
+            "title":"Mobile Applications",
+            "image":"/images/Abstract_Mobile.png",
+            
+        },
+        {
+            "title":"Desktop Softwares",
+            "image":"/images/Abstract_Software.png",
+            
+        },
+        {
+            "title":"E-Commerce Website",
+            "image":"/images/Abstract_Comm.png",
+            
+        },
+        {
+            "title":"Database and Servers",
+            "image":"/images/Abstarct_Database.png",
+            
+        },
+        {
+            "title":"Machine Learning & AI",
+            "image":"/images/Abstarct_ML.png",
+            
+        },
+        {
+            "title":"BlockChain and Crypto",
+            "image":"/images/Abstract_BC.png",
+            
+        },
+
+    ]
 
     const makeMessage = (data)=>{
         setMessage(data)
@@ -31,7 +74,7 @@ const HomeScreen = (props)=>{
 
     ]
     return(    
-            <div>
+            <>
                 <Poster title={props.title}/>
                 <ScrollAnimation animateIn='fadeIn'>
                <Container>
@@ -146,24 +189,37 @@ const HomeScreen = (props)=>{
 
                 <section className="section-technologies" id="section-technologies">
                 
-            <Container>
-                <Row className="row justify-content-center mt-3">
-                    <Col md={7} className="heading-section ftco-animate text-center">
-                        <h2 className="mb-4 tech-title" style={{"color":"#10375d"}}>Technologies</h2>
-                        
-                    </Col>
-                </Row>
-               
-                <div className="d-flex justify-content-center">
-                    <img src="/images/Techs.png" className="img-fluid" width="50%"/>
-                </div>
-               </Container>
+           
             
     </section>
 
-    
+    <section class="service-section section-gap p-3 mt-3">
+        <div class="container">
+            <div class="section-title text-center mb-30">
+            <h2 className="my-4 project-title" style={{"color":"#10375d","textAlign":'center'}}>Our Services</h2>
+            </div>
+            <div class="row service-items">
+                {
+                    Abstract_Services.map((item,index)=>{
+                        return(
+                            <div class="col-lg-3 col-md-6 col-sm-6 wow fadeInUp mt-3"  data-wow-delay="0.3s" >
+                    <div class="service-item color-2 text-center mt-30 " style={{"box-shaddow":" 5px 10px #fac654"}} >
+                        <div class="icon">
+                            <img width="100%" src={item.image} />
+                        </div>
+                        <h5 class="title"><a href="service-details.html">{item.title}</a></h5>
+                        
+                    </div>
+                </div>
+                        )
+                    })
+                }
+             
+            </div>
+        </div>
+    </section>
 
-    <section className="contact-section mt-3 p-3" id="contacts">
+    <section className="contact-section  p-3" id="contacts">
     <Container>
                 
                 <Row className=" ">
@@ -178,7 +234,8 @@ const HomeScreen = (props)=>{
                 
                 </Container>
     </section>
-            </div>
+    
+            </>
       
     )
 }
