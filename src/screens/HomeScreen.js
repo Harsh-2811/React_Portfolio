@@ -91,17 +91,18 @@ const HomeScreen = (props)=>{
 
                         <Col lg={8} md={8} sm={12}>
                             <div className="p-2 pt-1">
-                                <h3 style={{"color":"#fac654","textAlign":"center",'fontSize':'1.5rem'}}><span style={{'textTransform':'uppercase ','letterSpacing':'0.09rem'}}><i class="fas fa-check-circle"></i> Sparkle &nbsp;</span> <span style={{'textTransform':'uppercase ','letterSpacing':'0.09rem'}}><i class="fas fa-check-circle"></i> Sincerity </span> &nbsp; <span style={{'textTransform':'uppercase ','letterSpacing':'0.09rem'}}><i class="fas fa-check-circle"></i> Vanguard </span></h3>
+                               
                                 <ul className="aboutlist">
                                     <li>
-                                    We <span style={{"color":"#fac654"}}>SSV INFOTECH</span> are a growing IT Solution Startup. We provide Modern and Effective IT Solutions for Modern Businesses and Companies. Today in the developing IT world we use modern and latest technologies to build solutions with high security and better performance.
+                                    <span style={{"color":"#fac654"}}>Welcome to SSV INFOTECH.</span> SSV Infotech is the growing IT Startup for the best services of Web Development, Web Designing, Mobile Applications, E-Commerce Solutions, Machine Learning, and AI
+                                    
                                     </li>
                                     <li>
-                                    We provide excellent services in Web Development & Designing, Mobile Apps Development, Desktop Software Development, and Database Architecture. Appropriate Testing, Debugging, and Deployment on the Production level.
+                                    We started SSV Infotech with a single purpose, to provide the finest Web Development, Web Designing, Mobile Applications, E-Commerce Solutions, Machine Learning, and AI to Business, Finance, Education, Health, Markets and Logistics.
                                     </li>
 
                                     <li>
-                                    Our solutions are speedy, secured, reliable, customized and many more which follows client's need. We Deliver products and Services on Time.
+                                    SSV Infotech is growing IT Startup provide Modern IT Solutions using Modern Technologies. We're dedicated to giving you the best of IT Solutions, with a focus on Security, Performance, and Robustness
                                     </li>
                         
                                 </ul>

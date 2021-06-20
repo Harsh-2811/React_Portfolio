@@ -1,5 +1,5 @@
 import React,{useEffect} from 'react';
-import {Container} from 'react-bootstrap';
+import {Container,Row,Col} from 'react-bootstrap';
 import Typed from 'react-typed'
 import '../style/SPoster.css'
 
@@ -20,10 +20,20 @@ const SecondaryPoster = (props)=>{
                     <div className="">   
                     <div class="banner-text">
                             <div class="banner-content">
-                                
-                                <h2 data-animation="fadeInLeft" data-delay="0.6s" className="stitle title">
+                            <Row className=""  >
+                            <div class="banner-content">
+                                <Col lg={12} className="srow-height d-flex justify-content-center align-items-center">
+                                <h1 data-animation="fadeInLeft" data-delay="0.6s" className="stitle title">
                                    {title}
-                                </h2>
+                                </h1>
+                                
+                                
+                                
+                            
+                                </Col>
+                            </div>
+                            </Row>
+                                
                                 
                                 
                             </div>

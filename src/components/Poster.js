@@ -14,24 +14,24 @@ const Poster = (props)=>{
    const {title} = props
     return(
         <div style={poster}>
-            <div className="parent">
-                  <div className="child">
+            <div className="parent ">
+                  
                   
                     <div className="">   
-                    <div className="banner-text">
-                            <Row>
+                    <div className="banner-text container">
+                            <Row className=""  >
                                 
-                                <Col lg={12}>
+                                <Col lg={12} className="row-height d-flex  justify-content-center align-items-center">
                                 <div class="banner-content">
                                 <span data-animation="fadeInUp" data-delay="0.3s" className="title-tag">
-                                    IT Business Consulting
+                                    Shree Siddhivinayak Infotech
                                 </span>
                                 <h1 data-animation="fadeInLeft" data-delay="0.6s" className="title">
-                                    Modern IT Soluations Provider Company
+                                    Modern IT Solutions Provider Company
                                 </h1>
-                                <p data-animation="fadeInLeft" data-delay=".9s">
-
-                                </p>
+                               
+                                
+                                
                                 
                             </div>
                                 </Col>
@@ -42,7 +42,7 @@ const Poster = (props)=>{
                         <h3 className="letters" style={{"fontSize":"1.2rem"}}>{title? 
                           title : ''}  </h3>
                     </div>
-                  </div>
+                 
             </div>
         </div>
     )

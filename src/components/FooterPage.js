@@ -7,6 +7,22 @@ const FooterPage = ()=>{
           <Container>
           <footer>
                 <Row>
+                   
+                    <Col lg={4} md={4} sm={12} className=" my-3"> 
+                            <h3 style={{"color":"#fac654","textAlign":"center"}}>About Us</h3>
+                            <p>
+                                Welcome to SSV INFOTECH. SSV Infotech is the growing IT Startup for the best services in IT World.
+                            </p>
+                            <ul className="services-list" style={{"textAlign":'left'}}>
+                                <li style={{"color":"#fac654"}}><i class="fas fa-check-circle" ></i> &nbsp; Sparkle</li>
+                                <li style={{"color":"#fac654"}}><i class="fas fa-check-circle"></i> &nbsp;Sincerity</li>
+                                <li style={{"color":"#fac654"}}><i class="fas fa-check-circle"></i> &nbsp; Vanguard</li>
+                                
+                             </ul>
+
+
+
+                    </Col>
                     <Col lg={4} md={4} sm={12} className=" my-3"> 
                             <h3 style={{"color":"#fac654","textAlign":"center"}}>Services</h3>
                             <ul className="services-list">
@@ -16,12 +32,23 @@ const FooterPage = ()=>{
                                 <li>Desktop Softwares</li>
 
                                 <li>E-Commerce Solutions</li>
+                                <li>Machine Learning & AI</li>
+                               
+
 
 
                             </ul>
                     </Col>
-                    <Col lg={4} md={4} sm={12} className=" my-3"> 
-                            <h3 style={{"color":"#fac654","textAlign":"center"}}>Social</h3>
+                    <Col lg={3} md={4} sm={12} className=" my-3"> 
+                            <h3 style={{"color":"#fac654","textAlign":"center"}}>Contact US</h3>
+                            <ul className="services-list">
+                                
+                                <li><i className="fas fa-envelope"></i>  info@ssvinfotech.in </li>
+                                <li><i className="fas fa-map"></i>  Surat Gujarat India </li>
+
+
+                            </ul>
+
                             <div className="d-flex justify-content-center">
                                 <ul class="social-network social-circle">
                                 <li><a href="https://www.facebook.com/harshpatel.patel.35175/" className="icoFacebook" title="Facebook"><i className="fab fa-facebook-f"></i></a></li>
@@ -32,16 +59,6 @@ const FooterPage = ()=>{
 
                                 </ul>	
                             </div>			
-                    </Col>
-                    <Col lg={3} md={4} sm={12} className=" my-3"> 
-                            <h3 style={{"color":"#fac654","textAlign":"center"}}>Contact Me</h3>
-                            <ul className="services-list">
-                                <li><i className="fas fa-phone"></i>  +91 8849430206 </li>
-                                <li><i className="fas fa-envelope"></i>  ssvinfotech28@gmail.com </li>
-                                <li><i className="fas fa-map"></i>  Surat Gujarat India </li>
-
-
-                            </ul>
                     </Col>
                 </Row>
             </footer>

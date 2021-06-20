@@ -34,7 +34,7 @@
 
   .mynav a{
     color : #fff !important;
-    font-weight: bold !important;
+    
   }
   .mynav a.active{
     color: #fac654 !important;
@@ -46,7 +46,7 @@
   .mynav1 a{
     
     color : #10375d !important;
-    font-weight: bold !important;
+   
   }
   .mynav1 a.active{
     border-bottom: 5px solid #10375d;

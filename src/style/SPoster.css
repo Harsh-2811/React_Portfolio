@@ -1,50 +1,12 @@
-.parent {
-    width: 80vw;
-    height:80vh;
-    position: relative;
-  
-  }
-  .child{
-    width: 60vw;
-    height: 40vh;
-    position: absolute;
-    top:50%;
-    left:46%;
-    transform: translate(-30%,-20%);
-  }
-  
-  .parent .stitle{
-    width: 50vw;
-    height:30vh;
-    position: absolute;
-    top:25%;
-    left:50% !important;
-    
-    transform: translate(-20%,-50%);
-  }
-  @media only screen 
-  and (max-width: 1024px) 
-   {
-    .parent .stitle{
-        left:35% !important;
-      }
-}
-@media only screen 
-and (max-width: 768px) 
- {
-  .parent .stitle{
-      left:30% !important;
-    }
-}
-  @media only screen and (max-width: 576px) {
-    .parent  .stitle{
-        width: 40vw !important;
-        height:30vh !important;
-        font-size: 3rem !important;
-        left:20% !important;
-      }
-    
-  }
+@media only screen and (max-width: 600px) {
  
 
+  .srow-height{
+    height: 200px;
+    margin-top: 20% !important;
+  }
+  }
 
+  .srow-height{
+    height: 600px;
+  }
