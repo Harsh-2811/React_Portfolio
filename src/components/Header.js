@@ -2,13 +2,13 @@ import React,{useEffect,useState} from 'react';
 import { Navbar, Nav, Container, Row, NavDropdown,Col } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
 import { HashLink as LinkBook } from 'react-router-hash-link';
-import {useLocation} from 'react-router-dom'
+import {useLocation,useHistory} from 'react-router-dom'
 import '../style/Header.css'
 const Header = ()=>{
     const location = useLocation();
     const [navClass,setNavClass] = useState('mynav')
    
-
+    const history = useHistory();
     const [toogleClassName,settoogleClassName] = useState(' ')
     
 
@@ -21,10 +21,12 @@ const Header = ()=>{
           });
     },[])
 
-   
+    
+    console.log(location.hash)
     return(
+       
         <div>
-
+                
 
            <Navbar id="fullNav" bg="" className={navClass} variant="dark" expand="lg" collapseOnSelect fixed="top">
               <Container>
@@ -36,11 +38,25 @@ const Header = ()=>{
                    
                 <Navbar.Collapse id="basic-navbar-nav" >
                     
-                    <Nav  activeKey={location.pathname} className="ml-auto">
-                            <LinkContainer exact to='/'>
-                                <Nav.Link className="animate_link " ><i className="fas fa-home pr-2"></i>&nbsp; Home</Nav.Link>
+                    <Nav  activeKey={location.pathname} className="ml-auto ssv-nav">
+                            <LinkContainer exact to='/' onClick={
+                                ()=>{
+                                    window.scrollTo({
+                                        top: 0, 
+                                        behavior: 'smooth'
+                                        /* you can also use 'auto' behaviour
+                                           in place of 'smooth' */
+                                      });
+                                }
+                            }  className={`${location.pathname}${location.hash}` !== 
+                             " " ? "active1" : " "}
+                            >
+                                <Nav.Link className="animate_link" ><i className="fas fa-home pr-2"></i>&nbsp; Home</Nav.Link>
                             </LinkContainer>
-                            <LinkBook to='/#aboutme' className="animate_link nav-link">
+
+                            <LinkBook to='/#aboutme' exact 
+                            className={`${location.pathname}${location.hash}` === 
+                             "/#aboutme" ? "active animate_link nav-link" : "animate_link nav-link "}>
                             <i className="fas fa-info pr-2"></i>&nbsp; About Us
                             </LinkBook>
                             <LinkContainer exact to='/services'>
@@ -51,7 +67,10 @@ const Header = ()=>{
                                 <Nav.Link className="animate_link"><i className="fas fa-briefcase pr-2"></i>&nbsp; Projects</Nav.Link>
                                 </LinkContainer>
                             
-                            <LinkBook to='/#contacts' className="animate_link nav-link">
+                            <LinkBook to='/#contacts' exact 
+                             className={`${location.pathname}${location.hash}` === 
+                             "/#contacts" ? "active animate_link nav-link" : "animate_link nav-link "}
+                            >
                             <i className="fas fa-envelope pr-2 "></i>&nbsp; Contact Us
 
                             </LinkBook>

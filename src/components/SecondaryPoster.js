@@ -18,7 +18,7 @@ const SecondaryPoster = (props)=>{
                   <div className="child">
                   
                     <div className="">   
-                    <div class="banner-text">
+                    <div class="banner-text container">
                             <div class="banner-content">
                             <Row className=""  >
                             <div class="banner-content">

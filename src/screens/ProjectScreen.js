@@ -24,6 +24,7 @@ const ProjectScreen = (props)=>{
             "technology":"Django and Python ",
             "image":"/images/Pizza.JPG",
             "type":"Website",
+            
         },
         {
             "id":"2",
@@ -53,6 +54,14 @@ const ProjectScreen = (props)=>{
             "technology":"React and Django",
             "image":"/images/Interior.PNG",
             "type":"Website",
+        },
+
+        {
+            "id":"5",
+            "title":"SoftTech",
+            "technology":"HTML and CSS Web Design",
+            "image":"/images/SoftTech.PNG",
+            "type":"Web Design",
         },
        
         

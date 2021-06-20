@@ -77,8 +77,8 @@ const HomeScreen = (props)=>{
             <>
                 <Poster title={props.title}/>
                 <ScrollAnimation animateIn='fadeIn'>
-               <Container>
-               <div className="aboutDiv p-3 my-2" id="aboutme" style={{'backgroundColor':'#10375d'}}>
+               <Container id="aboutme">
+               <div className="aboutDiv p-3 my-2"  style={{'backgroundColor':'#10375d'}}>
                     <div className="my-3 p-3">
                         <h2 className="text-center aboutus-title" style={{'color':'#fff'}}>About Us</h2>
                     </div>

@@ -20,7 +20,7 @@ const ContactScreen = (props)=>{
     return(
         <div>
                 <SecondaryPoster title={title}/>
-                <Container>
+                <Container className="py-3">
                 
                 <Row className=" ">
                 <Col md={6} className=" ">
