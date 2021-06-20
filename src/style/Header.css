@@ -3,7 +3,9 @@
     position: relative;
    
   }
-  
+  .animate_link.active{
+    
+  }
   .animate_link:after {
     content: '';
     position: absolute;

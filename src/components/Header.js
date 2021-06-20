@@ -1,8 +1,8 @@
 import React,{useEffect,useState} from 'react';
 import { Navbar, Nav, Container, Row, NavDropdown,Col } from 'react-bootstrap'
 import { LinkContainer } from 'react-router-bootstrap'
-import { HashLink as LinkBook } from 'react-router-hash-link';
-import {useLocation,useHistory} from 'react-router-dom'
+import { NavHashLink as LinkBook } from 'react-router-hash-link';
+import {useLocation,useHistory,Link} from 'react-router-dom'
 import '../style/Header.css'
 const Header = ()=>{
     const location = useLocation();
@@ -22,11 +22,11 @@ const Header = ()=>{
     },[])
 
     
-    console.log(location.hash)
+    console.log(location.pathname,location.hash)
     return(
        
         <div>
-                
+           
 
            <Navbar id="fullNav" bg="" className={navClass} variant="dark" expand="lg" collapseOnSelect fixed="top">
               <Container>
@@ -37,23 +37,26 @@ const Header = ()=>{
                     <Navbar.Toggle aria-controls="basic-navbar-nav" id="toggleBtn" className={`${toogleClassName} toggleBtn`} />
                    
                 <Navbar.Collapse id="basic-navbar-nav" >
-                    
+                
                     <Nav  activeKey={location.pathname} className="ml-auto ssv-nav">
-                            <LinkContainer exact to='/' onClick={
-                                ()=>{
-                                    window.scrollTo({
-                                        top: 0, 
-                                        behavior: 'smooth'
-                                        /* you can also use 'auto' behaviour
-                                           in place of 'smooth' */
-                                      });
-                                }
-                            }  className={`${location.pathname}${location.hash}` !== 
-                             " " ? "active1" : " "}
-                            >
-                                <Nav.Link className="animate_link" ><i className="fas fa-home pr-2"></i>&nbsp; Home</Nav.Link>
-                            </LinkContainer>
-
+                            
+                                <Link 
+                                
+                                className={`${location.pathname}${location.hash}` === 
+                                "/" ? "active animate_link nav-link" : "animate_link nav-link "}
+                                 exact to='/' onClick={
+                                    ()=>{
+                                        window.scrollTo({
+                                            top: 0, 
+                                            behavior: 'smooth'
+                                            /* you can also use 'auto' behaviour
+                                               in place of 'smooth' */
+                                          });
+                                    }
+                                }  
+                                
+                                ><i className="fas fa-home pr-2"></i>&nbsp; Home</Link>
+                           
                             <LinkBook to='/#aboutme' exact 
                             className={`${location.pathname}${location.hash}` === 
                              "/#aboutme" ? "active animate_link nav-link" : "animate_link nav-link "}>
