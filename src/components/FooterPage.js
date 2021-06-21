@@ -10,15 +10,14 @@ const FooterPage = ()=>{
                    
                     <Col lg={4} md={4} sm={12} className=" my-3"> 
                             <h3 style={{"color":"#fac654","textAlign":"center"}}>About Us</h3>
-                            <p>
-                                Welcome to SSV INFOTECH. SSV Infotech is the growing IT Startup for the best services in IT World.
+                            <p style={{'fontSize':'1rem','letterSpacing':'0.1rem'}}>
+                            <span style={{"color":"#fac654"}}>Welcome to SSV INFOTECH.</span> SSV Infotech is the growing IT Startup for the best services of Web Development, Web Designing, Mobile Applications, E-Commerce Solutions, Machine Learning, and AI
+                                    
                             </p>
-                            <ul className="services-list" style={{"textAlign":'left'}}>
-                                <li style={{"color":"#fac654"}}><i class="fas fa-check-circle" ></i> &nbsp; Sparkle</li>
-                                <li style={{"color":"#fac654"}}><i class="fas fa-check-circle"></i> &nbsp;Sincerity</li>
-                                <li style={{"color":"#fac654"}}><i class="fas fa-check-circle"></i> &nbsp; Vanguard</li>
-                                
-                             </ul>
+                            <p style={{'color':'#fac654'}}>
+                            <i class="fas fa-check-circle" ></i> &nbsp; Sparkle &nbsp; <i class="fas fa-check-circle"></i> &nbsp;Sincerity &nbsp; <i class="fas fa-check-circle"></i> &nbsp; Vanguard
+                                </p>
+                           
 
 
 

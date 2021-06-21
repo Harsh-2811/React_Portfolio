@@ -98,11 +98,11 @@ const HomeScreen = (props)=>{
                                     
                                     </li>
                                     <li>
-                                    We started SSV Infotech with a single purpose, to provide the finest Web Development, Web Designing, Mobile Applications, E-Commerce Solutions, Machine Learning, and AI to Business, Finance, Education, Health, Markets and Logistics.
+                                    We started SSV Infotech with a single purpose, to provide Modern Solution for Businesses, Finance, Education, Health, Markets and Logistics.
                                     </li>
 
                                     <li>
-                                    SSV Infotech is growing IT Startup provide Modern IT Solutions using Modern Technologies. We're dedicated to giving you the best of IT Solutions, with a focus on Security, Performance, and Robustness
+                                    SSV Infotech follows Modern Technologies, Testing Tools and Development with Deployment Techniques. We're dedicated to giving you the best of IT Solutions, with a focus on Security, Performance, and Robustness
                                     </li>
                         
                                 </ul>
