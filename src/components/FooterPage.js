@@ -43,17 +43,17 @@ const FooterPage = ()=>{
                             <ul className="services-list">
                                 
                                 <li><i className="fas fa-envelope"></i>  info@ssvinfotech.in </li>
-                                <li><i className="fas fa-map"></i>  Surat Gujarat India </li>
+                                <li><i class="fas fa-map-marker-alt"></i>  Surat Gujarat India </li>
 
 
                             </ul>
 
                             <div className="d-flex justify-content-center">
                                 <ul class="social-network social-circle">
-                                <li><a href="https://www.facebook.com/harshpatel.patel.35175/" className="icoFacebook" title="Facebook"><i className="fab fa-facebook-f"></i></a></li>
-                                <li><a href="https://www.linkedin.com/in/harsh-patel-b7793115b/" className="icoLinkedin" title="Linkedin"><i className="fab fa-linkedin-in"></i></a></li>
-                                <li><a href="#" className="icoWhatsapp" title="Whatsapp"><i className="fab fa-whatsapp"></i></a></li>
-                                <li><a href="#" className="icoInstageam" title="Instagram"><i className="fab fa-instagram"></i></a></li>
+                                <li><a href="https://www.facebook.com/profile.php?id=100069771338478" className="icoFacebook" title="Facebook"><i className="fab fa-facebook-f"></i></a></li>
+                                {/* <li><a href="https://www.linkedin.com/in/harsh-patel-b7793115b/" className="icoLinkedin" title="Linkedin"><i className="fab fa-linkedin-in"></i></a></li>
+                                <li><a href="#" className="icoWhatsapp" title="Whatsapp"><i className="fab fa-whatsapp"></i></a></li>*/
+                                <li><a href="https://www.instagram.com/ssvinfotech/" className="icoInstageam" title="Instagram"><i className="fab fa-instagram"></i></a></li> }
 
 
                                 </ul>	

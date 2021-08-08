@@ -22,7 +22,7 @@ const Header = ()=>{
     },[])
 
     
-    console.log(location.pathname,location.hash)
+
     return(
        
         <div>

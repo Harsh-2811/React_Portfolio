@@ -5,7 +5,7 @@ import '../style/Services.css'
 
 const Services = (props)=>{
     const services_list = props.services_list;
-    console.log(services_list)
+   
     return(
         
             <>
