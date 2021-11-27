@@ -10,10 +10,10 @@ const ProjectScreen = (props)=>{
     const [tech_list,set_TechList] = useState([
         "All",
         "Python",
-        "Web Design",
+        
         "Javascript",
         "React",
-        "React Native"
+        
     ]); 
 
    const [projects,setProjects] = useState( 
@@ -56,12 +56,13 @@ const ProjectScreen = (props)=>{
             "type":"Website",
         },
 
+     
         {
-            "id":"5",
-            "title":"SoftTech",
-            "technology":"HTML and CSS Web Design",
-            "image":"/images/SoftTech.PNG",
-            "type":"Web Design",
+            "id":"6",
+            "title":"Healthy Mania",
+            "technology":"Django - Python - Javascript",
+            "image":"/images/healthymania.PNG",
+            "type":"E-Commerce Solution",
         },
        
         
