@@ -61,7 +61,7 @@ const ProjectScreen = (props)=>{
             "id":"6",
             "title":"Healthy Mania",
             "technology":"Django - Python - Javascript",
-            "image":"/images/healthymania.PNG",
+            "image":"/images/healthymania.png",
             "type":"E-Commerce Solution",
         },
        
